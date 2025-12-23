@@ -18,57 +18,55 @@ _我们将在不到一小时的时间内学习如何使用GitHub_
 </header>
 
 <!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
 -->
 
-## Step 1: 新建分支
+## Step 2: 提交文件（Commit a file）
 
-_欢迎来到 "GitHub 入门课程"! :wave:_
+_你已经成功创建了一个分支! :tada:_
 
-**什么是GitHub**: GitHub 是一个使用 _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ 进行版本控制和协作的代码托管平台，是一个分享和贡献开源软件的流行平台。
+创建分支的好处是，你可以在不影响 main 主分支的情况下修改项目。
+现在有了属于你的分支，接下来我们要创建一个新文件，并完成你的第一个提交（commit）！
 
-📺 可以看看这段 Youtube 介绍视频：[什么是 GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+**什么是提交(commit)？**: _[提交](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)_ 是指对项目中的文件或文件夹的一组修改。提交存在于某个分支中。更多信息，请参阅文档 "[关于提交](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)"。
 
-**什么是仓库（Repository）？**：_[仓库](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ 是 GitHub 最核心的元素。一个仓库就像一个项目文件夹，里面包含所有项目文件（包括文档），并存储每个文件的修改历史记录。 仓库可以有多个协作者，仓库可以是公开的，也可以设置为私有的。欲了解更多信息，请查看 GitHub 文档中的"[关于仓库](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)"。
+### :keyboard: 实操环节：完成你的第一个提交
+
+下面会带你在 GitHub 上完成一次文件修改提交。
+
+“提交” 可以是对项目所做的任何修改，比如修改文件内容、新增文件、删除文件或重命名。
+本练习中，我们要先在你的分支上添加一个新文件，并将它提交到仓库中。
 
 
-**什么是分支（Branch）？**: _[分支](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ 是您仓库的并行版本。每个仓库在创建时都有一个默认主分支，通常叫 `main`，它代表项目的主线版本。
+> [!NOTE]
+> `.md` 是 Markdown 文件的扩展名。Markdown 是一种轻量级标记语言，用来格式化文字。其语法格式可以阅读我们的文档 "[基本撰写和格式语法](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" 或学习课程 "[使用 Markdown 进行沟通](https://github.com/skills/communicate-using-markdown)"。
 
-创建新的分支可以让你从 main 复制一份独立的副本，方便修改、测试或开发新功能，而不会影响主项目。
-许多人会为特定功能开独立分支，这样可以在不干扰他人的情况下进行开发。
+1. 在仓库导航栏中， 进入 **< > Code** 页面，确认你当前所在的分支是 `my-first-branch`。
 
-使用分支的好处是，你的修改和主分支是隔离的 —— 换句话说，每个人的工作都能保持安全。
-更多介绍请看文档：[关于分支](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)。
+2. 点击 **Add file** 下拉菜单，选择 **Create new file** 。
 
-**什么是 Profile README？**: _[Profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ 是 GitHub 个人主页上的自我介绍部分。你可以在这里展示自己的信息、项目或兴趣。
-GitHub 会把它显示在你个人主页的顶部。更多内容可参考 "[管理个人资料自述文件](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+   ![create new file option](/images/create-new-file.png)
 
-![profile-readme-example](/images/profile-readme-example.png)
+3. 在 **Name your file...** 输入框中填写文件名： `PROFILE.md`.
 
-### :keyboard: 实操环节：创建你的第一个分支
+4. 在 **Enter file contents here** 编辑框中输入以下内容
 
-1. 打开一个新的浏览器标签页，进入你刚创建的仓库。保持这个页面不关，边看步骤边操作。
-2. 在仓库顶部导航栏中，点击 **< > Code** 选项。
+   ```
+   Welcome to my GitHub profile!
+   ```
 
-   ![code-tab](/images/code-tab.png)
+   ![profile.md file screenshot](/images/my-profile-file.png)
 
-3. 点击 **main** 分支的下拉菜单。
+5. 在页面右上方，点击 **Commit changes...**。
+在弹出的提交界面中，你可以填写一条简短的信息来说明这次提交的内容。
+虽然 GitHub 会自动生成一条默认信息，但这次我们自己写一条，输入： `Add PROFILE.md`。
 
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
+   ![screenshot of adding a new file with a commit message](/images/commit-full-screen.png)
 
-4. 在输入框中输入新分支名 `my-first-branch`。注意：必须使用这个名字，才能触发课程后续流程。
-
-5. 点击 **Create branch: my-first-branch** 按钮来创建分支。
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   创建后，你的仓库会自动切换到这个新分支，下拉菜单中也会显示出 `my-first-branch`。
-
-6. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
+6. 本节我们暂时不用关心其他选项，直接点击 **Commit changes**。
+7. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
 
 <footer>
 
