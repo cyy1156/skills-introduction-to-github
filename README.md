@@ -18,55 +18,53 @@ _我们将在不到一小时的时间内学习如何使用GitHub_
 </header>
 
 <!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  <<< Author notes: Step 3 >>>
+  Just a historic note: the previous version of this step forced the learner
+  to write a pull request description,
+  checked that `main` was the receiving branch,
+  and that the file was named correctly.
 -->
 
-## Step 2: 提交文件（Commit a file）
+## Step 3: 发起 Pull Request（合并请求）
 
-_你已经成功创建了一个分支! :tada:_
+_你已经完成提交，干得漂亮! :sparkles:_
 
-创建分支的好处是，你可以在不影响 main 主分支的情况下修改项目。
-现在有了属于你的分支，接下来我们要创建一个新文件，并完成你的第一个提交（commit）！
+现在，你已经修改了项目并完成了一次提交，是时候把这些更改分享给别人了 —— 通过 Pull Request（简称 PR）。
 
-**什么是提交(commit)？**: _[提交](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)_ 是指对项目中的文件或文件夹的一组修改。提交存在于某个分支中。更多信息，请参阅文档 "[关于提交](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)"。
+**什么是拉取请求(pull request)**: _[pull request](https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request)_ 是团队协作的核心方式。它展示了你在分支上所做的更改，让其他人可以查看、讨论、提出修改建议，或直接接受你的更改。
 
-### :keyboard: 实操环节：完成你的第一个提交
+简单来说，它会把你当前分支上的内容，与主分支 `main` 进行对比，并提议把这些改动合并进去。更多关于拉取请求，请查看文档"[关于 pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)"。
 
-下面会带你在 GitHub 上完成一次文件修改提交。
+### :keyboard: 实操环节: 创建 Pull Request
 
-“提交” 可以是对项目所做的任何修改，比如修改文件内容、新增文件、删除文件或重命名。
-本练习中，我们要先在你的分支上添加一个新文件，并将它提交到仓库中。
+您可能已经注意到，提交完成后 GitHub 会在页面上方提示 “你刚刚推送了新提交”，并显示一个按钮 **Compare & pull request**。
 
+![screenshot of message and button](/images/compare-and-pull-request.png)
+
+如果点击这个按钮，GitHub 会自动为你创建一个 Pull Request，跳过后续的大部分步骤（直接看第 6 步）。
+如果你想手动创建，请按下面步骤操作：
+
+1. 点击仓库顶部菜单栏里的 **Pull requests** 标签页。
+2. 点击 **New pull request**。
+3. 在 **base:** 下拉菜单中选择 **main**（表示目标分支）。
+4. 在 **compare:** 下拉菜单中选择你创建的分支 `my-first-branch`。
+
+   ![screenshot showing both branch selections](/images/pull-request-branches.png)
+
+5. 点击 **Create pull request**。
+6. 为你的 Pull Request 添加标题。默认标题是分支名，这里可以改成 `Add my first file`.
+7. 下面输入框中输入描述性的话，说明你做了那些修改
+
+   ![screenshot showing pull request](/images/Pull-request-description.png)
+
+8. 点击 **Create pull request**。然后页面会自动跳转到你新建的拉取请求
+9. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
 
 > [!NOTE]
-> `.md` 是 Markdown 文件的扩展名。Markdown 是一种轻量级标记语言，用来格式化文字。其语法格式可以阅读我们的文档 "[基本撰写和格式语法](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" 或学习课程 "[使用 Markdown 进行沟通](https://github.com/skills/communicate-using-markdown)"。
-
-1. 在仓库导航栏中， 进入 **< > Code** 页面，确认你当前所在的分支是 `my-first-branch`。
-
-2. 点击 **Add file** 下拉菜单，选择 **Create new file** 。
-
-   ![create new file option](/images/create-new-file.png)
-
-3. 在 **Name your file...** 输入框中填写文件名： `PROFILE.md`.
-
-4. 在 **Enter file contents here** 编辑框中输入以下内容
-
-   ```
-   Welcome to my GitHub profile!
-   ```
-
-   ![profile.md file screenshot](/images/my-profile-file.png)
-
-5. 在页面右上方，点击 **Commit changes...**。
-在弹出的提交界面中，你可以填写一条简短的信息来说明这次提交的内容。
-虽然 GitHub 会自动生成一条默认信息，但这次我们自己写一条，输入： `Add PROFILE.md`。
-
-   ![screenshot of adding a new file with a commit message](/images/commit-full-screen.png)
-
-6. 本节我们暂时不用关心其他选项，直接点击 **Commit changes**。
-7. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
+> 当 Pull Request 创建后，你可能会看到一个 “GitHub Actions” 正在运行的提示。
+运行完成后，它可能会显示一行状态信息，例如下图所示：
+> 
+> ![screenshot of an example of an actions line](/images/Actions-to-step-4.png)
 
 <footer>
 
