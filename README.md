@@ -18,39 +18,42 @@ _我们将在不到一小时的时间内学习如何使用GitHub_
 </header>
 
 <!--
-  <<< Author notes: Step 4 >>>
-  Just a historic note: The previous version of this step required responding
-  to a pull request review before merging. The previous version also handled
-  if users accidentally closed without merging.
+  <<< Author notes: Finish >>>
+  Review what we learned, ask for feedback, provide next steps.
 -->
 
-## Step 4: 合并 Pull Request
+## 结束
 
-_你已经创建了 Pull Request，做得很好! :sunglasses:_
+_恭喜你顺利完成本课程，正式踏入开发者的世界！_
 
-Pull Request 的意义在于让他人有机会在代码合并到主分支之前，先审查并提出意见。
-当所有讨论完成并确认无误后，就可以将这个分支的修改正式合并进主分支。
 
-**什么是合并(merge)?**: [合并（merge）](https://docs.github.com/en/get-started/quickstart/github-glossary#merge)_ 的过程，就是把你分支上的改动整合进 main 分支。
-一旦合并完成，你的修改就会成为主分支的一部分。更多详细说明可参阅 "[Merging a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)"。
+<img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
 
-在上一步中，你可能注意到 GitHub Actions 在后台运行，它会自动帮你推进课程进度。
-当合并按钮变成绿色时（如下图），就表示可以进行合并操作了。
+来回顾一下你完成的内容：
 
-![screenshot of green merge pull request button](/images/Green-merge-pull-request.png)
+* 了解了 GitHub 的基本概念：仓库（repository）、分支（branch）、提交（commit）以及拉取请求（pull request）。
+* 亲手创建了一个分支、一次提交和一个拉取请求。
+* 成功合并了你的第一个拉取请求。
+* 你已经完成了第一次开源贡献! :tada:
 
-### :keyboard: 实操环节: Merge the pull request
 
-1. 点击 **Merge pull request**
-2. 点击 **Confirm merge**，确认合并
-3. 当分支成功合并到 `main` 后，这个分支就没用了，你可以点击 Delete branch 将其删除。
+### 接下来可以做什么？
 
-   ![screenshot showing delete branch button](/images/delete-branch.png)
+如果你想让自己的 GitHub 主页更有个性，可以创建一个 **个人主页 README**。下面是简要步骤（或参考官方文档 [管理个人主页 README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)）：
 
-4. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
+1. 新建一个 **公开仓库**，仓库名要与你的 GitHub 用户名完全一致。
+2. 在仓库根目录下新建一个文件：`README.md`。
+3. 编辑这个文件的内容，用来展示你的简介、项目或兴趣。
+4. 如果你在新分支中创建了这个文件，记得提交一个拉取请求并合并。
+5. 最后，欢迎你在 [课程讨论区](https://github.com/orgs/skills/discussions/categories/introduction-to-github) 分享一下你的学习体验！
 
-> [!NOTE]
-> 在下一步的 **Finish** 步骤你可以看到本教程的总结和后续建议，了解更多可学习的内容。
+### 想继续深入了解？可以试试这些资源：
+
+
+* 你是学生？看看 [GitHub 学生开发者工具包](https://education.github.com/pack)。
+* 继续学习其他 [GitHub 技能课程](https://github.com/skills)。
+* 阅读 [GitHub 新手指南](https://docs.github.com/en/get-started)。
+* 想参与更多项目？去 [GitHub Explore](https://github.com/explore) 发现有趣的开源项目吧。
 
 <footer>
 
