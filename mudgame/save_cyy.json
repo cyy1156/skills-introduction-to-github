@@ -1,0 +1,22 @@
+{
+  "name": "cyy",
+  "grade": 3,
+  "exp": 50,
+  "lifeValue": 120,
+  "maxLifeValue": 120,
+  "defend": 10,
+  "attack": 20,
+  "skills": [
+    {
+      "name": "火系突刺",
+      "damageMultiplier": 2,
+      "description": "火焰强化刺击"
+    },
+    {
+      "name": "火系突刺",
+      "damageMultiplier": 2,
+      "description": "火焰强化刺击"
+    }
+  ],
+  "roleType": "XiaoYan"
+}
